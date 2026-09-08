@@ -17,7 +17,7 @@ By organizing your raw footage into camera-specific folders, these scripts scan 
 `Scans your currently active timeline and applies colors directly to the items placed on your video tracks.`
 * **[AutoClip Config](AutoClip%20Config.json)**<br/>
 `A centralized configuration file where you manage your sync paths and camera keyword color rules in one place.`
-* **[Download All Scripts](https://github.com/SuperClaudioo/DaVinci-Resolve-Auto-Clip-Color/releases/download/v1.0/AutoClipColor.zip)**<br/>
+* **[Download All Scripts](AutoClipColor.zip)**<br/>
 `Download the full script suite and configuration template.`
 
 <img width="714" height="1144" alt="Screenshot 2026-09-08 172916" src="https://github.com/user-attachments/assets/83273ffd-7fe6-4171-ad5d-d0e44e2ab8d6" />
