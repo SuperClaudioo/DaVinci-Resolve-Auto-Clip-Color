@@ -1,21 +1,28 @@
 # DaVinci Resolve Auto Clip Colorizer
 
-A collection of Python scripts for DaVinci Resolve Studio that automatically assign specific clip colors to your footage by reading the source file paths. 
+A collection of Python scripts for DaVinci Resolve Studio that automatically assign specific clip colors to your footage by reading the source file paths.
 
 By organizing your raw footage into camera-specific folders (e.g., `Day 1/Pocket 3/`), these scripts scan the file paths and instantly apply a predefined color palette to your clips, saving you a lot of time.
 
 ## Included Scripts
-
 * **AutoClipColor - All Bins.py**<br/>
 `Scans your entire Media Pool from the root folder down and applies colors to every matching clip.`
 * **AutoClipColor - Selected Bin.py**<br/>
 `Targets only the currently open bin within the Media Pool.`
 * **AutoClipColor - Timeline Only.py**<br/>
 `Scans your currently active timeline and applies colors directly to the items placed on your video tracks.`
+<img width="228" height="625" alt="Screenshot 2026-09-08 124139" src="https://github.com/user-attachments/assets/dac7dc0c-8ade-43e6-b542-8f3a0a21a41b" />
 
 ## Requirements
 * DaVinci Resolve Studio (The free version does not support external Python scripting).
 * Python 3 installed on your system and linked in Resolve's preferences (`Preferences > System > General`).
+
+## Preparing the files and folders
+- Before using it, make sure that your files are on the correct folders.
+   - For example if you have a Sony camera the clips should be inside the Sony camera folder, if you have a DJI Pocket 3 camera, the clips should be inside a Pocket 3 folder, etc...
+   - You can have multiple folders with the same name.
+   - The script will search all clip files inside the folders to match the correct color.
+<img width="544" height="333" alt="Screenshot 2026-09-08 124859" src="https://github.com/user-attachments/assets/d3d5f37d-bfef-409c-8a43-ca4f9fd3e96e" />
 
 ## Installation & Usage
 1. Open DaVinci Resolve.
@@ -23,15 +30,23 @@ By organizing your raw footage into camera-specific folders (e.g., `Day 1/Pocket
 
    On windows it's usually:
     `C:\ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Utility`
-4. Navigate into the **Utility** subfolder.
-5. Drop the `.py` files into this `Utility` folder.
-6. In Resolve, run your desired script from the **Workspace** > **Scripts** menu.
+3. Drop the `.py` files into this `Utility` folder.
+4. In Resolve, run your desired script from the **Workspace** > **Scripts** menu.
+<img width="707" height="1168" alt="Screenshot 2026-09-08 125401" src="https://github.com/user-attachments/assets/17cf0db1-5480-4a66-859d-44e32d3aaed2" />
+
 
 ## Customization
-You can easily modify the script to match your specific cameras and preferred colors. Open any of the `.py` files in a text editor and update the `CAMERA_KEYWORDS` dictionary at the top[cite: 1, 2, 3]. 
-You can add several lines for the same camera ("Sony A7SIII", "Sony A7S3", etc...).
+You can easily modify the script to match your specific cameras and preferred colors.
+Open any of the `.py` files in a text editor and update the `CAMERA_KEYWORDS` dictionary at the top. 
+You can add several lines/folders for the same camera ("Sony A7SIII", "Sony A7S3", etc...).
 
-**Supported Resolve Colors:** Orange, Apricot, Yellow, Green, Teal, Navy, Blue, Purple, Pink, Brown, Chocolate, Mango, Tan, Olive, Mint.
+<img width="382" height="708" alt="Screenshot 2026-09-08 124559" src="https://github.com/user-attachments/assets/102b826b-33ee-4b9b-856e-4ea117ec3486" />
+
+
+**Supported Resolve Colors:**
+Orange, Apricot, Yellow, Green, Teal, Navy, Blue, Purple, Pink, Brown, Chocolate, Mango, Tan, Olive, Mint.
+
+ <img width="895" height="696" alt="Screenshot 2026-09-08 124217" src="https://github.com/user-attachments/assets/0a40a4ef-9eac-4886-8cbd-0ae30df5dc63" />
 
 ---
 **Author:** Check out my work on Instagram: [@SuperClaudioo](https://instagram.com/SuperClaudioo).
