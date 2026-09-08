@@ -58,8 +58,8 @@ Instead of editing multiple scripts, you only need to modify **`AutoClip Config.
 {
     "_comment_folders": "Add any root hard drive folders you want to sync into DaVinci Resolve.",
     "FOLDERS_TO_SYNC": [
-        "D:\\RAW",
-        "G:\\360"
+        "C:\\YOUR FOLDER HERE",
+        "D:\\YOUR OTHER FOLDER HERE"
     ],
     "_comment_keywords": "Match your camera names or keywords to your preferred DaVinci Resolve colors. Specific models go at the top, generic words go at the bottom.",
     "CAMERA_KEYWORDS": {
