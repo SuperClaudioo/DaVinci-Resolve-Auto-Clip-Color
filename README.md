@@ -6,9 +6,12 @@ By organizing your raw footage into camera-specific folders (e.g., `Day 1/Pocket
 
 ## Included Scripts
 
-* **AutoClipColor - All Bins.py**: Scans your entire Media Pool from the root folder down and applies colors to every matching clip.
-* **AutoClipColor - Selected Bin.py**: Targets only the currently open bin within the Media Pool.
-* **AutoClipColor - Timeline Only.py**: Scans your currently active timeline and applies colors directly to the items placed on your video tracks.
+* **AutoClipColor - All Bins.py**<br/>
+`Scans your entire Media Pool from the root folder down and applies colors to every matching clip.`
+* **AutoClipColor - Selected Bin.py**<br/>
+`Targets only the currently open bin within the Media Pool.`
+* **AutoClipColor - Timeline Only.py**<br/>
+`Scans your currently active timeline and applies colors directly to the items placed on your video tracks.`
 
 ## Requirements
 * DaVinci Resolve Studio (The free version does not support external Python scripting).
