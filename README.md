@@ -38,6 +38,7 @@ I did 3 different scripts because sometimes you just want to:
    - On MacOS is' in:
       `/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Utility`
    3. Drop the `.py` files into this `Utility` folder.
+       -  `You might have to restart DaVinci Resolve Studio for it to work`
    4. In Resolve, run your desired script from the **Workspace** > **Scripts** menu.
 <img width="707" height="1168" alt="Screenshot 2026-09-08 125401" src="https://github.com/user-attachments/assets/17cf0db1-5480-4a66-859d-44e32d3aaed2" />
 
@@ -47,9 +48,9 @@ You can easily modify the script to match your specific cameras and preferred co
 Open any of the `.py` files in a text editor and update the `CAMERA_KEYWORDS` dictionary at the top. 
 You can add several lines/folders for the same camera ("Sony A7SIII", "Sony A7S3", etc...).
 
-<img width="424" height="1387" alt="Screenshot 2026-09-08 130857" src="https://github.com/user-attachments/assets/01ef16ac-ae4b-4f73-a1d1-a57f11905a73" />!<img width="382" height="708" alt="Screenshot 2026-09-08 124559" src="https://github.com/user-attachments/assets/56772fc2-dbd1-4ac5-b35e-6efd6f4e20bc" />
+<img width="424" height="1387" alt="Screenshot 2026-09-08 130857" src="https://github.com/user-attachments/assets/01ef16ac-ae4b-4f73-a1d1-a57f11905a73" /> <img width="382" height="708" alt="Screenshot 2026-09-08 124559" src="https://github.com/user-attachments/assets/56772fc2-dbd1-4ac5-b35e-6efd6f4e20bc" />
 
-   Just use any notepad editor to edit the file(s) and costumize it to your prefered outlook.
+   Just use any notepad editor to edit the file(s) and customize it to your preferred look.
 
 ---
 **Supported Resolve Colors:**
