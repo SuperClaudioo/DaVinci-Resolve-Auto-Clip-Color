@@ -1,0 +1,81 @@
+{
+    "_comment_folders": "1. Add any root hard drive folders you want to sync into DaVinci Resolve.",
+    "FOLDERS_TO_SYNC": [
+        "D:\\RAW",
+        "G:\\360"
+    ],
+    "_comment_keywords": "Match your camera names or keywords to your preferred DaVinci Resolve colors. Specific models go at the top, generic words go at the bottom.",
+    "CAMERA_KEYWORDS": {
+        "fx3": "Orange",
+        "fx6": "Orange",
+        "a7siii": "Orange",
+        "a7iv": "Orange",
+        
+        "c70": "Blue",
+        "eos r5": "Blue",
+        "eos r6": "Blue",
+        
+        "pocket 6k": "Navy",
+        "pocket 4k": "Navy",
+        "ursa mini": "Navy",
+        
+        "gh6": "Teal",
+        "s5iix": "Teal",
+        
+        "z8": "Yellow",
+        "z9": "Yellow",
+        
+        "x-h2s": "Tan",
+        "x-t5": "Tan",
+        
+        "v-raptor": "Chocolate",
+        "komodo": "Chocolate",
+        
+        "alexa mini": "Olive",
+        "alexa 35": "Olive",
+        
+        "iphone 15 pro": "Apricot",
+        "iphone 14 pro": "Apricot",
+        
+        "s25 ultra": "Lime",
+        "s24 ultra": "Lime",
+        
+        "dji pocket 3": "Purple",
+        "mavic 3": "Purple",
+        
+        "mini 4 pro": "Violet",
+        "air 2s": "Violet",
+        
+        "hero12": "Green",
+        "hero11": "Green",
+        
+        "insta360 x4": "Pink",
+        "insta360 x3": "Pink",
+        
+        "leica sl3": "Beige",
+        
+        "fpv drone": "Brown",
+        
+        "sony": "Orange",
+        "canon": "Blue",
+        "blackmagic": "Navy",
+        "bmpcc": "Navy",
+        "lumix": "Teal",
+        "panasonic": "Teal",
+        "nikon": "Yellow",
+        "fujifilm": "Tan",
+        "fuji": "Tan",
+        "red": "Chocolate",
+        "arri": "Olive",
+        "iphone": "Apricot",
+        "apple": "Apricot",
+        "samsung": "Lime",
+        "galaxy": "Lime",
+        "dji": "Purple",
+        "gopro": "Green",
+        "insta360": "Pink",
+        "360": "Pink",
+        "leica": "Beige",
+        "drone": "Brown"
+    }
+}
