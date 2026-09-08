@@ -2,34 +2,46 @@
 
 CAMERA_KEYWORDS = {
     # Sony
-    "A7SIII": "Orange",
-    "A7S3": "Orange",
-    "A7S 3": "Orange",
+    "Sony": "Orange",
+    
+    # Canon
+    "Canon": "Blue",
+    
+    # Panasonic / Lumix
+    "Panasonic": "Purple",
+    "Lumix": "Purple",
+    
+    # Blackmagic Design
+    "Blackmagic": "Teal",
+    "BMPCC": "Teal",
+    "BMD": "Teal",
+    
+    # RED Digital Cinema
+    "RED": "Chocolate",
+    
+    # ARRI
+    "ARRI": "Yellow",
+    "Alexa": "Yellow",
+    
+    # DJI
+    "DJI": "Green",
+    
+    # GoPro
+    "GoPro": "Navy",
+    
+    # Nikon
+    "Nikon": "Apricot",
+    
+    # Fujifilm
+    "Fujifilm": "Olive",
+    "Fuji": "Olive",
+    
+    # Apple / iPhone
+    "Apple": "Beige",
+    "iPhone": "Beige",
     
     # Insta360
-    "Insta360": "Yellow",
-    "X5": "Yellow",
-    
-    # Samsung
-    "S25 Ultra": "Chocolate",
-    "S25U": "Chocolate",
-    "S25_Ultra": "Chocolate",
-    
-    # DJI Aerial
-    "Air 2S": "Teal",
-    "Air2S": "Teal",
-    "Air_2S": "Teal",
-    
-    # DJI Gimbals
-    "Pocket 3": "Blue",
-    "Pocket3": "Blue",
-    "Pocket 4P": "Purple",
-    "Pocket4P": "Purple",
-    
-    # DJI 360
-    "DJI 360": "Pink",
-    "DJI360": "Pink",
-    "360": "Pink",
+    "Insta360": "Violet"
 }
 
 def get_resolve():
