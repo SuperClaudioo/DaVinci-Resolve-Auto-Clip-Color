@@ -36,8 +36,10 @@ I did 3 different scripts because sometimes you just want to:
    2. Go to the top menu bar and select **Workspace** > **Scripts** > **Open Scripts Folder**.
 
    - On windows it's in:
+   
       `C:\ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Utility`
    - On MacOS is' in:
+   
       `/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Utility`
    3. Drop the `.py` files into this `Utility` folder.
        -  `You might have to restart DaVinci Resolve Studio for it to work`
