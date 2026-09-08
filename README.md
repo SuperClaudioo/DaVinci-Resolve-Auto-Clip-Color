@@ -5,11 +5,11 @@ A collection of Python scripts for DaVinci Resolve Studio that automatically ass
 By organizing your raw footage into camera-specific folders (e.g., `Day 1/Pocket 3/`), these scripts scan the file paths and instantly apply a predefined color palette to your clips, saving you a lot of time.
 
 ## Included Scripts
-* **AutoClipColor - All Bins.py**<br/>
+* **[AutoClipColor - All Bins](AutoClipColor%20-%20All%20Bins.py)**<br/>
 `Scans your entire Media Pool from the root folder down and applies colors to every matching clip.`
-* **AutoClipColor - Selected Bin.py**<br/>
+* **[AutoClipColor - Selected Bin](AutoClipColor%20-%20Selected%20Bin.py)**<br/>
 `Targets only the currently open bin within the Media Pool.`
-* **AutoClipColor - Timeline Only.py**<br/>
+* **[AutoClipColor - Timeline Only](AutoClipColor%20-%20Timeline%20Only.py)**<br/>
 `Scans your currently active timeline and applies colors directly to the items placed on your video tracks.`
 <img width="228" height="625" alt="Screenshot 2026-09-08 124139" src="https://github.com/user-attachments/assets/dac7dc0c-8ade-43e6-b542-8f3a0a21a41b" />
 
