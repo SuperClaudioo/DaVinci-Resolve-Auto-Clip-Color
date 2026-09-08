@@ -17,7 +17,7 @@ By organizing your raw footage into camera-specific folders, these scripts scan 
 `Scans your currently active timeline and applies colors directly to the items placed on your video tracks.`
 * **[AutoClip Config](AutoClip%20Config.json)**<br/>
 `A centralized configuration file where you manage your sync paths and camera keyword color rules in one place.`
-* **[Download All Scripts](AutoClipColor.zip)**<br/>
+* **[Download All Scripts](https://github.com/SuperClaudioo/DaVinci-Resolve-Auto-Clip-Color/releases/download/v1.0/AutoClipColor.zip)**<br/>
 `Download the full script suite and configuration template.`
 
 <img width="714" height="1144" alt="Screenshot 2026-09-08 172916" src="https://github.com/user-attachments/assets/83273ffd-7fe6-4171-ad5d-d0e44e2ab8d6" />
@@ -51,30 +51,89 @@ I built multiple scripts because sometimes you just want to:
       - `You might have to restart DaVinci Resolve Studio for changes to appear.`
    4. In Resolve, run your desired script from the **Workspace** > **Scripts** menu.
 
-<img width="707" height="1168" alt="Screenshot 2026-09-08 125401" src="https://github.com/user-attachments/assets/731135f7-8562-47da-91f2-9fafdeca0a67" />
-
 ## Customization
 Instead of editing multiple scripts, you only need to modify **`AutoClip Config.json`** in a text editor to update your folder paths or camera keyword preferences. 
 
 ```json
 {
-    "_comment_folders": "1. Add any root hard drive folders you want to sync into DaVinci Resolve.",
+    "_comment_folders": "Add any root hard drive folders you want to sync into DaVinci Resolve.",
     "FOLDERS_TO_SYNC": [
         "D:\\RAW",
         "G:\\360"
     ],
     "_comment_keywords": "Match your camera names or keywords to your preferred DaVinci Resolve colors. Specific models go at the top, generic words go at the bottom.",
     "CAMERA_KEYWORDS": {
-        "insta360": "Yellow",
-        "pocket 4p": "Violet",
-        "dji pocket 3": "Purple",
-        "air 2s": "Tan",
-        "s25 ultra": "Chocolate",
+        "fx3": "Orange",
+        "fx6": "Orange",
         "a7siii": "Orange",
-        "360": "Pink",
+        "a7iv": "Orange",
+        
+        "c70": "Blue",
+        "eos r5": "Blue",
+        "eos r6": "Blue",
+        
+        "pocket 6k": "Navy",
+        "pocket 4k": "Navy",
+        "ursa mini": "Navy",
+        
+        "gh6": "Teal",
+        "s5iix": "Teal",
+        
+        "z8": "Yellow",
+        "z9": "Yellow",
+        
+        "x-h2s": "Tan",
+        "x-t5": "Tan",
+        
+        "v-raptor": "Chocolate",
+        "komodo": "Chocolate",
+        
+        "alexa mini": "Olive",
+        "alexa 35": "Olive",
+        
+        "iphone 15 pro": "Apricot",
+        "iphone 14 pro": "Apricot",
+        
+        "s25 ultra": "Lime",
+        "s24 ultra": "Lime",
+        
+        "dji pocket 3": "Purple",
+        "mavic 3": "Purple",
+        
+        "mini 4 pro": "Violet",
+        "air 2s": "Violet",
+        
+        "hero12": "Green",
+        "hero11": "Green",
+        
+        "insta360 x4": "Pink",
+        "insta360 x3": "Pink",
+        
+        "leica sl3": "Beige",
+        
+        "fpv drone": "Brown",
+        
         "sony": "Orange",
         "canon": "Blue",
-        "gopro": "Navy"
+        "blackmagic": "Navy",
+        "bmpcc": "Navy",
+        "lumix": "Teal",
+        "panasonic": "Teal",
+        "nikon": "Yellow",
+        "fujifilm": "Tan",
+        "fuji": "Tan",
+        "red": "Chocolate",
+        "arri": "Olive",
+        "iphone": "Apricot",
+        "apple": "Apricot",
+        "samsung": "Lime",
+        "galaxy": "Lime",
+        "dji": "Purple",
+        "gopro": "Green",
+        "insta360": "Pink",
+        "360": "Pink",
+        "leica": "Beige",
+        "drone": "Brown"
     }
 }
 ```
