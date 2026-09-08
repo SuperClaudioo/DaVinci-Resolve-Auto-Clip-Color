@@ -11,7 +11,7 @@ By organizing your raw footage into camera-specific folders (e.g., `Day 1/Pocket
 `Targets only the currently open bin within the Media Pool.`
 * **[AutoClipColor - Timeline Only](AutoClipColor%20-%20Timeline%20Only.py)**<br/>
 `Scans your currently active timeline and applies colors directly to the items placed on your video tracks.`
-* **[AutoClipColor - Download Al Scripts](AutoClipColor.zip)**<br/>
+* **[AutoClipColor - Download Al Scripts](https://github.com/SuperClaudioo/DaVinci-Resolve-Auto-Clip-Color/releases/download/v1.0/AutoClipColor.zip)**<br/>
 `Download the 3 scripts into your computer`
 <img width="228" height="625" alt="Screenshot 2026-09-08 124139" src="https://github.com/user-attachments/assets/dac7dc0c-8ade-43e6-b542-8f3a0a21a41b" />
 
