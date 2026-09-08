@@ -1,48 +1,17 @@
-#!/usr/bin/env python
+import json
+import os
+import inspect
 
-CAMERA_KEYWORDS = {
-    # Sony
-    "Sony": "Orange",
-    
-    # Canon
-    "Canon": "Blue",
-    
-    # Panasonic / Lumix
-    "Panasonic": "Purple",
-    "Lumix": "Purple",
-    
-    # Blackmagic Design
-    "Blackmagic": "Teal",
-    "BMPCC": "Teal",
-    "BMD": "Teal",
-    
-    # RED Digital Cinema
-    "RED": "Chocolate",
-    
-    # ARRI
-    "ARRI": "Yellow",
-    "Alexa": "Yellow",
-    
-    # DJI
-    "DJI": "Green",
-    
-    # GoPro
-    "GoPro": "Navy",
-    
-    # Nikon
-    "Nikon": "Apricot",
-    
-    # Fujifilm
-    "Fujifilm": "Olive",
-    "Fuji": "Olive",
-    
-    # Apple / iPhone
-    "Apple": "Beige",
-    "iPhone": "Beige",
-    
-    # Insta360
-    "Insta360": "Violet"
-}
+# Automatically find the script's folder even when run inside DaVinci Resolve
+try:
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+except NameError:
+    script_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+
+config_path = os.path.join(script_dir, "AutoClip Config.json")
+
+with open(config_path, "r") as f:
+    config = json.load(f)
 
 def get_resolve():
     try:
@@ -52,18 +21,16 @@ def get_resolve():
         return resolve
 
 def color_media_pool(folder):
-    # Color the clips inside the folder based on their File Path
     clips = folder.GetClipList()
     if clips:
         for clip in clips:
             file_path = clip.GetClipProperty("File Path")
             if file_path:
-                for keyword, color in CAMERA_KEYWORDS.items():
+                for keyword, color in config["CAMERA_KEYWORDS"].items():
                     if keyword.lower() in file_path.lower():
                         clip.SetClipColor(color)
-                        break 
+                        break
     
-    # Recursively scan sub-bins of the selected bin
     subfolders = folder.GetSubFolderList()
     if subfolders:
         for subfolder in subfolders:
@@ -83,8 +50,6 @@ def main():
         return
 
     media_pool = project.GetMediaPool()
-    
-    # Target the currently open/selected bin instead of the entire project
     current_folder = media_pool.GetCurrentFolder()
     
     if not current_folder:
@@ -93,7 +58,7 @@ def main():
 
     print(f"--- STARTING SCAN ON BIN: '{current_folder.GetName()}' ---")
     color_media_pool(current_folder)
-    print("\n--- SCRIPT FINISHED --- CHeck my stuff on Instagram: SuperClaudioo")
+    print("\n--- SCRIPT FINISHED --- Check my stuff on Instagram: SuperClaudioo")
 
 if __name__ == "__main__":
     main()
