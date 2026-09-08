@@ -15,7 +15,7 @@ By organizing your raw footage into camera-specific folders, these scripts scan 
 `Targets only the currently open bin within the Media Pool.`
 * **[AutoClipColor - Timeline Only](AutoClipColor%20-%20Timeline%20Only.py)**<br/>
 `Scans your currently active timeline and applies colors directly to the items placed on your video tracks.`
-* **[AutoClip Config](Auto%20Clip%20Config.json)**<br/>
+* **[AutoClip Config](AutoClip%20Config.json)**<br/>
 `A centralized configuration file where you manage your sync paths and camera keyword color rules in one place.`
 * **[Download All Scripts](https://github.com/SuperClaudioo/DaVinci-Resolve-Auto-Clip-Color/releases/download/v1.0/AutoClipColor.zip)**<br/>
 `Download the full script suite and configuration template.`
