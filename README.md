@@ -1,6 +1,6 @@
 # ![](https://img.shields.io/badge/DaVinci-E66D1E?style=for-the-badge) ![](https://img.shields.io/badge/Resolve-0B8789?style=for-the-badge) ![](https://img.shields.io/badge/Auto-725686?style=for-the-badge) ![](https://img.shields.io/badge/Folder-3B70A8?style=for-the-badge) ![](https://img.shields.io/badge/And-D2A42F?style=for-the-badge) ![](https://img.shields.io/badge/Clip-49936E?style=for-the-badge) ![](https://img.shields.io/badge/Color-BA5C94?style=for-the-badge)
 
-# <span style="color:#E66D1E">DaVinci</span> <span style="color:#3B70A8">Resolve</span> <span style="color:#D2A42F">Auto</span> <span style="color:#49936E">Folder</span> <span style="color:#0B8789">and</span> <span style="color:#725686">Clip</span> <span style="color:#BA5C94">Color</span>
+# <span style="color:#E66D1E">Auto</span> <span style="color:#3B70A8">Folder</span> <span style="color:#D2A42F">Sync</span> & <span style="color:#49936E">Media</span> <span style="color:#0B8789">Color</span> <span style="color:#725686">for</span> <span style="color:#BA5C94">DaVinci Resolve</span>
 
 A collection of Python scripts for DaVinci Resolve Studio that automatically syncs hard drive folders into master bins and assigns specific clip colors to your footage by reading the source file paths.
 
