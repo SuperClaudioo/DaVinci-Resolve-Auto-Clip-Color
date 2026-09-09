@@ -1,25 +1,25 @@
-# ![](https://img.shields.io/badge/DaVinci-E66D1E?style=for-the-badge) ![](https://img.shields.io/badge/Resolve-0B8789?style=for-the-badge) ![](https://img.shields.io/badge/Auto-725686?style=for-the-badge) ![](https://img.shields.io/badge/Folder-3B70A8?style=for-the-badge) ![](https://img.shields.io/badge/And-D2A42F?style=for-the-badge) ![](https://img.shields.io/badge/Clip-49936E?style=for-the-badge) ![](https://img.shields.io/badge/Color-BA5C94?style=for-the-badge)
+# ![](https://img.shields.io/badge/DaVinci-E66D1E?style=for-the-badge) ![](https://img.shields.io/badge/Resolve-0B8789?style=for-the-badge) ![](https://img.shields.io/badge/Auto-725686?style=for-the-badge) ![](https://img.shields.io/badge/Folder-3B70A8?style=for-the-badge) ![](https://img.shields.io/badge/Sync-D2A42F?style=for-the-badge) ![](https://img.shields.io/badge/And-A2C327?style=for-the-badge) ![](https://img.shields.io/badge/Media-49936E?style=for-the-badge) ![](https://img.shields.io/badge/Color-BA5C94?style=for-the-badge)
 
-# <span style="color:#E66D1E">Auto</span> <span style="color:#3B70A8">Folder</span> <span style="color:#D2A42F">Sync</span> & <span style="color:#49936E">Media</span> <span style="color:#0B8789">Color</span> <span style="color:#725686">for</span> <span style="color:#BA5C94">DaVinci Resolve</span>
+# <span style="color:#E66D1E">DaVinci Resolve</span> <span style="color:#725686">Auto</span> <span style="color:#3B70A8">Folder</span> <span style="color:#D2A42F">Sync</span> and <span style="color:#49936E">Media</span> <span style="color:#BA5C94">Color</span>
 
-A collection of Python scripts for DaVinci Resolve Studio that automatically syncs hard drive folders into master bins and assigns specific clip colors to your footage by reading the source file paths.
+A professional suite of Python scripts for DaVinci Resolve Studio that automatically syncs hard drive folders into master bins and assigns specific clip colors (and LUTs) to your footage by reading the source file paths.
 
-By organizing your raw footage into camera-specific folders, these scripts scan the file paths and instantly apply a predefined color palette to your clips, saving you a lot of time.
+By organizing your raw footage into camera-specific folders, these scripts scan the file paths and instantly apply a predefined color palette and Input LUT to your clips, saving you hours of manual organization.
 
 ## Included Scripts & Files
-* **[Auto Import Folders](Auto%20Import%20Folders.py)**<br/>
-`Automatically syncs root hard drive directories into DaVinci Resolve master bins and colors matching clips on import.`
-* **[Auto Import Folders - Sync Only](Auto%20Import%20Folders%20-%20Sync%20Only.py)**<br/>
+* **[01 - Auto Import Folders.py](01%20-%20Auto%20Import%20Folders.py)**<br/>
 `Mirrors your hard drive directory structures into Resolve master bins without applying any clip colors.`
-* **[AutoClipColor - All Bins](AutoClipColor%20-%20All%20Bins.py)**<br/>
-`Scans your entire Media Pool from the root folder down and applies colors to every matching clip.`
-* **[AutoClipColor - Selected Bin](AutoClipColor%20-%20Selected%20Bin.py)**<br/>
-`Targets only the currently open bin within the Media Pool.`
-* **[AutoClipColor - Timeline Only](AutoClipColor%20-%20Timeline%20Only.py)**<br/>
-`Scans your currently active timeline and applies colors directly to the items placed on your video tracks. Note: This script also automatically applies your configured Sony LUTs directly to the timeline clips.`
-* **[AutoClip Config](AutoClip%20Config.json)**<br/>
+* **[02 - Auto Import and Bin Color.py](02%20-%20Auto%20Import%20and%20Bin%20Color.py)**<br/>
+`Automatically syncs root hard drive directories into DaVinci Resolve master bins, colors matching clips, and applies LUTs on import.`
+* **[03 - Color Selected Bin.py](03%20-%20Color%20Selected%20Bin.py)**<br/>
+`Targets only the currently open bin within the Media Pool to apply colors and LUTs.`
+* **[04 - Color All Bins.py](04%20-%20Color%20All%20Bins.py)**<br/>
+`Scans your entire Media Pool from the root folder down and applies colors and LUTs to every matching clip.`
+* **[05 - Color Timeline Media.py](05%20-%20Color%20Timeline%20Media.py)**<br/>
+`Scans your currently active timeline and applies colors directly to the items placed on your video tracks.`
+* **[Config.json](Config.json)**<br/>
 `A centralized configuration file where you manage your sync paths, LUTs, and camera keyword color rules in one place.`
-* **[Download All Scripts](https://github.com/SuperClaudioo/DaVinci-Resolve-Auto-Clip-Color/releases/download/v1.0/AutoClipColor.zip)**<br/>
+* **[Download All Scripts](https://github.com/SuperClaudioo/DaVinci-Resolve-Auto-Clip-Color/releases/download/v1.0/Auto-Folder-Sync-Media-Color.zip)**<br/>
 `Download the full script suite and configuration template.`
 
 <img width="714" height="1144" alt="Screenshot 2026-09-08 172916" src="https://github.com/user-attachments/assets/83273ffd-7fe6-4171-ad5d-d0e44e2ab8d6" />
@@ -27,41 +27,38 @@ By organizing your raw footage into camera-specific folders, these scripts scan 
 I built multiple scripts because sometimes you just want to:
    - Auto-sync external directories into bins (with or without automatic coloring)
    - Color one specific bin or camera
-   - Color only active timeline clips (and apply automated LUTs)
+   - Color only active timeline clips
    - Color all bins globally
 
 ## Requirements
 * **DaVinci Resolve Studio** (The free version does not support external Python scripting).
 * Python 3 installed on your system and linked in Resolve's preferences (`Preferences > System > General`).
 
-## Preparing the Files and Folders
-- Make sure your hard drive source directories contain your raw footage separated logically.
-- Configure your target paths and camera keywords inside the `AutoClip Config.json` file.
-- The script checks file paths dynamically to match your established rules.
-
-<img width="544" height="333" alt="Screenshot 2026-09-08 124859" src="https://github.com/user-attachments/assets/727ebf1e-eaf6-4fef-8d27-676a01b97375" />
-
 ## Installation & Usage
-   1. Open DaVinci Resolve.
-   2. Go to the top menu bar and select **Workspace** > **Scripts** > **Open Scripts Folder**.
 
-   - On Windows it is located at:
-      `C:\ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Utility`
-   - On macOS it is located at:
-      `/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Utility`
-   3. Drop all the `.py` script files and the `AutoClip Config.json` file into this `Utility` folder.
-      - `You might have to restart DaVinci Resolve Studio for changes to appear.`
-   4. In Resolve, run your desired script from the **Workspace** > **Scripts** menu.
+### Recommended (Automated)
+Unzip the downloaded package and open the install folder for your operating system:
+* **Windows:** Open the `Install(Win)` folder and double-click `01-Install.bat`.
+* **Mac:** Open the `Install(Mac)` folder, right-click `01-Install.command`, select **Open**, and run it in Terminal.
+
+Restart DaVinci Resolve. The scripts will appear in the top menu bar under **Workspace > Scripts > Sync and Label Suite**.
+
+On the newer versions, it might not be necessary to restart Resolve.
+
+### Manual Installation
+Copy the `Auto Folder Sync and Media Color` folder to your user-specific Resolve scripts directory:
+* **Windows:** `%AppData%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Utility\`
+* **Mac:** `~/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Utility/`
 
 ## Customization
-Instead of editing multiple scripts, you only need to modify **`AutoClip Config.json`** in a text editor to update your folder paths or camera keyword preferences. 
+Instead of editing multiple scripts, you only need to use the **`02-Config`** shortcut to update your folder paths, camera keyword preferences, or LUTs. 
 
 ```json
 {
-    "_comment_folders": "Add any root hard drive folders you want to sync into DaVinci Resolve.",
+    "_comment_folders": "Add any root hard drive folders you want to sync into DaVinci Resolve. Use double backslashes (\\)",
     "FOLDERS_TO_SYNC": [
-        "C:\\YOUR FOLDER HERE",
-        "D:\\YOUR OTHER FOLDER HERE"
+        "D:\\RAW\\2026\\Morocco",
+        "D:\\YOUR FOLDER HERE"
     ],
     "_comment_keywords": "Match your camera names or keywords to your preferred DaVinci Resolve colors. Specific models go at the top, generic words go at the bottom.",
     "CAMERA_KEYWORDS": {
@@ -136,14 +133,34 @@ Instead of editing multiple scripts, you only need to modify **`AutoClip Config.
         "360": "Pink",
         "leica": "Beige",
         "drone": "Brown"
+    },
+    "_comment_luts": "Assign exact internal LUT paths to your keywords. Use double backslashes (\\). Leave out any cameras that don't need a LUT.",
+    "CAMERA_LUTS": {
+        "fx3": "Sony\\SLog3SGamut3.CineToCine+709",
+        "a7siii": "Sony\\SLog3SGamut3.CineToCine+709",
+        "sony": "Sony\\SLog3SGamut3.CineToCine+709",
+		"red": "RED\\RWG_Log3G10_to_REC709_BT1886_with_LOW_CONTRAST_and_R_3_Soft_size_33"
     }
 }
 ```
 
-Note:
-   - Put specific camera models (like "insta360") at the top, and generic or short words (like "360") at the bottom. The script reads top-to-bottom and halts on the first matched keyword.
-   
-   - Just use any notepad editor to edit the file(s) and customize it to your preferred look.
+Important Formatting Notes:
+   - Smart Matching: The script automatically prioritizes longer, specific keywords (like "dji pocket 3") over generic ones (like "dji"). You do not need to worry about the top-to-bottom order.
+
+   - Double Slashes: When adding folder paths or LUT paths on Windows, you must use double backslashes (\\) so the code reads it correctly.
+
+   - Commas: Ensure every line inside a list or group ends with a comma, except for the very last item in that group.
+
+**Finding Your Exact LUT Path:**
+   - To find the exact internal LUT string to paste into your config file, apply the LUT manually to just one clip in your current bin. Open Workspace > Console, click Py3 to switch to Python, and paste this exact code:
+```json
+clips = resolve.GetProjectManager().GetCurrentProject().GetMediaPool().GetCurrentFolder().GetClipList()
+for clip in clips:
+    lut = clip.GetClipProperty("Input LUT")
+    if lut:
+        print(f"\nLUT PATH TO COPY:\n{lut}\n")
+        break
+```
 
 ---
 **Supported Resolve Colors:**
