@@ -7,7 +7,7 @@ A professional suite of Python scripts for DaVinci Resolve Studio that automatic
 By organizing your raw footage into camera-specific folders, these scripts scan the file paths and instantly apply a predefined color palette and Input LUT to your clips, saving you hours of manual organization.
 
 ## Included Scripts & Files
-* **[01 - Auto Import Folders.py](Auto%20Folder%20Sync%20and%20Media%20Color/01%20-%20Auto%20Import%20Folders.py))**<br/>
+* **[01 - Auto Import Folders.py](Auto%20Folder%20Sync%20and%20Media%20Color/01%20-%20Auto%20Import%20Folders.py)**<br/>
 `Mirrors your hard drive directory structures (including new sub-folders) into Resolve master bins without applying any clip colors.`
 * **[02 - Auto Import and Bin Color.py](Auto%20Folder%20Sync%20and%20Media%20Color/02%20-%20Auto%20Import%20and%20Bin%20Color.py)**<br/>
 `Automatically syncs root hard drive directories into DaVinci Resolve master bins, colors matching clips, and applies LUTs on import.`
@@ -19,7 +19,7 @@ By organizing your raw footage into camera-specific folders, these scripts scan 
 `Scans your currently active timeline and applies colors directly to the items placed on your video tracks.`
 * **[Config.json](Auto%20Folder%20Sync%20and%20Media%20Color/Config.json)**<br/>
 `A centralized configuration file where you manage your sync paths, LUTs, and camera keyword color rules in one place.`
-* **[Download All Scripts](https://github.com/SuperClaudioo/DaVinci-Resolve-Auto-Clip-Color/releases/download/v1.0/Auto-Folder-Sync-Media-Color.zip](https://github.com/SuperClaudioo/DaVinci-Resolve-Auto-Folder-Sync-and-Media-Color/releases/tag/v1.0)](https://github.com/SuperClaudioo/DaVinci-Resolve-Auto-Folder-Sync-and-Media-Color/releases/tag/v1.0))**<br/>
+* **[Download All Scripts](https://github.com/SuperClaudioo/DaVinci-Resolve-Auto-Folder-Sync-and-Media-Color/archive/refs/tags/v1.0.zip)**<br/>
 `Download the full script suite and configuration template.`
 
 <img width="600" height="338" alt="Demo1" src="https://github.com/user-attachments/assets/28cf1a0c-1197-4d40-83f1-170433a9800b" />
