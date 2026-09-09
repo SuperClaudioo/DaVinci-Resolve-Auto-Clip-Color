@@ -8,7 +8,7 @@ By organizing your raw footage into camera-specific folders, these scripts scan 
 
 ## Included Scripts & Files
 * **[01 - Auto Import Folders.py](01%20-%20Auto%20Import%20Folders.py)**<br/>
-`Mirrors your hard drive directory structures into Resolve master bins without applying any clip colors.`
+`Mirrors your hard drive directory structures (including new sub-folders) into Resolve master bins without applying any clip colors.`
 * **[02 - Auto Import and Bin Color.py](02%20-%20Auto%20Import%20and%20Bin%20Color.py)**<br/>
 `Automatically syncs root hard drive directories into DaVinci Resolve master bins, colors matching clips, and applies LUTs on import.`
 * **[03 - Color Selected Bin.py](03%20-%20Color%20Selected%20Bin.py)**<br/>
