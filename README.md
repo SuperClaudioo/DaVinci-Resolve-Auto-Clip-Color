@@ -22,13 +22,14 @@ By organizing your raw footage into camera-specific folders, these scripts scan 
 * **[Download All Scripts](https://github.com/SuperClaudioo/DaVinci-Resolve-Auto-Clip-Color/releases/download/v1.0/Auto-Folder-Sync-Media-Color.zip)**<br/>
 `Download the full script suite and configuration template.`
 
-<img width="714" height="1144" alt="Screenshot 2026-09-08 172916" src="https://github.com/user-attachments/assets/83273ffd-7fe6-4171-ad5d-d0e44e2ab8d6" />
+<img width="600" height="338" alt="Demo1" src="https://github.com/user-attachments/assets/28cf1a0c-1197-4d40-83f1-170433a9800b" />
 
 I built multiple scripts because sometimes you just want to:
    - Auto-sync external directories into bins (with or without automatic coloring)
    - Color one specific bin or camera
    - Color only active timeline clips
    - Color all bins globally
+<img width="1109" height="332" alt="Screenshot 2026-09-09 144744" src="https://github.com/user-attachments/assets/1a3bc8e0-1da7-4d51-9ef5-a3b92e4db369" />
 
 ## Requirements
 * **DaVinci Resolve Studio** (The free version does not support external Python scripting).
@@ -44,6 +45,8 @@ Unzip the downloaded package and open the install folder for your operating syst
 Restart DaVinci Resolve. The scripts will appear in the top menu bar under **Workspace > Scripts > Sync and Label Suite**.
 
 On the newer versions, it might not be necessary to restart Resolve.
+
+<img width="383" height="167" alt="Screenshot 2026-09-09 145016" src="https://github.com/user-attachments/assets/80b67ecd-2b01-4e16-ac35-e52fce0afd69" />
 
 ### Manual Installation
 Copy the `Auto Folder Sync and Media Color` folder to your user-specific Resolve scripts directory:
