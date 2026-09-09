@@ -144,14 +144,14 @@ Instead of editing multiple scripts, you only need to use the **`02-Config`** sh
 }
 ```
 
-Important Formatting Notes:
+### Important Formatting Notes:
    - Smart Matching: The script automatically prioritizes longer, specific keywords (like "dji pocket 3") over generic ones (like "dji"). You do not need to worry about the top-to-bottom order.
 
    - Double Slashes: When adding folder paths or LUT paths on Windows, you must use double backslashes (\\) so the code reads it correctly.
 
    - Commas: Ensure every line inside a list or group ends with a comma, except for the very last item in that group.
 
-**Finding Your Exact LUT Path:**
+### **Finding Your Exact LUT Path:**
    - To find the exact internal LUT string to paste into your config file, apply the LUT manually to just one clip in your current bin. Open Workspace > Console, click Py3 to switch to Python, and paste this exact code:
 ```json
 clips = resolve.GetProjectManager().GetCurrentProject().GetMediaPool().GetCurrentFolder().GetClipList()
@@ -163,7 +163,7 @@ for clip in clips:
 ```
 
 ---
-**Supported Resolve Colors:**
+### **Supported Resolve Colors:**
 
 Orange, Apricot, Yellow, Lime, Olive, Green, Teal, Navy, Blue, Purple, Violet, Pink, Tan, Beige, Brown, Chocolate.
 
@@ -172,7 +172,7 @@ Orange, Apricot, Yellow, Lime, Olive, Green, Teal, Navy, Blue, Purple, Violet, P
  <img width="895" height="696" alt="Screenshot 2026-09-08 124217" src="https://github.com/user-attachments/assets/0a40a4ef-9eac-4886-8cbd-0ae30df5dc63" />
  
 ---
-**Troubleshooting Section:**
+### **Troubleshooting Section:**
 
    If scripts don't run, ensure Python 3 is installed on your system and linked in Resolve under <b>Preferences > System > General</b>
 
