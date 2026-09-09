@@ -9,23 +9,25 @@ By organizing your raw footage into camera-specific folders, these scripts scan 
 ## Included Scripts & Files
 * **[Auto Import Folders](Auto%20Import%20Folders.py)**<br/>
 `Automatically syncs root hard drive directories into DaVinci Resolve master bins and colors matching clips on import.`
+* **[Auto Import Folders - Sync Only](Auto%20Import%20Folders%20-%20Sync%20Only.py)**<br/>
+`Mirrors your hard drive directory structures into Resolve master bins without applying any clip colors.`
 * **[AutoClipColor - All Bins](AutoClipColor%20-%20All%20Bins.py)**<br/>
 `Scans your entire Media Pool from the root folder down and applies colors to every matching clip.`
 * **[AutoClipColor - Selected Bin](AutoClipColor%20-%20Selected%20Bin.py)**<br/>
 `Targets only the currently open bin within the Media Pool.`
 * **[AutoClipColor - Timeline Only](AutoClipColor%20-%20Timeline%20Only.py)**<br/>
-`Scans your currently active timeline and applies colors directly to the items placed on your video tracks.`
+`Scans your currently active timeline and applies colors directly to the items placed on your video tracks. Note: This script also automatically applies your configured Sony LUTs directly to the timeline clips.`
 * **[AutoClip Config](AutoClip%20Config.json)**<br/>
-`A centralized configuration file where you manage your sync paths and camera keyword color rules in one place.`
+`A centralized configuration file where you manage your sync paths, LUTs, and camera keyword color rules in one place.`
 * **[Download All Scripts](https://github.com/SuperClaudioo/DaVinci-Resolve-Auto-Clip-Color/releases/download/v1.0/AutoClipColor.zip)**<br/>
 `Download the full script suite and configuration template.`
 
 <img width="714" height="1144" alt="Screenshot 2026-09-08 172916" src="https://github.com/user-attachments/assets/83273ffd-7fe6-4171-ad5d-d0e44e2ab8d6" />
 
 I built multiple scripts because sometimes you just want to:
-   - Auto-sync external directories into bins
+   - Auto-sync external directories into bins (with or without automatic coloring)
    - Color one specific bin or camera
-   - Color only active timeline clips
+   - Color only active timeline clips (and apply automated LUTs)
    - Color all bins globally
 
 ## Requirements
